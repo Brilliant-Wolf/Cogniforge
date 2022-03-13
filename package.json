@@ -1,0 +1,36 @@
+{
+  "name": "cogniforge",
+  "version": "0.1.0",
+  "description": "Learning for all through collaborative projects and peer-to-peer mentorship",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "repository": "git+https://github.com/Cytronicode/Cogniforge.git",
+  "keywords": [
+    "cogniforge",
+    "collaboration",
+    "education",
+    "learning",
+    "mentors",
+    "projects"
+  ],
+  "author": "Zeyu Yao",
+  "license": "GPL-3.0-or-later",
+  "bugs": {
+    "url": "https://github.com/Cytronicode/Cogniforge/issues"
+  },
+  "homepage": "https://github.com/Cytronicode/Cogniforge#readme",
+  "dependencies": {
+    "next": "12.1.0",
+    "react": "17.0.2",
+    "react-dom": "17.0.2"
+  },
+  "devDependencies": {
+    "eslint": "8.11.0",
+    "eslint-config-next": "12.1.0"
+  }
+}
