@@ -13,8 +13,9 @@ export default function Home() {
         <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"/ >
         <link rel="manifest" href="/site.webmanifest" />
       </Head>
-
+	
       <main className={styles.main}>
+		
         <h1 className={styles.title}>
           Imagine a platform...
         </h1>
@@ -27,16 +28,7 @@ export default function Home() {
       </main>
 
       <footer className={styles.footer}>
-        <a
-          href="https://discord.gg/NFRzZkqZDR"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Built by{' '}
-          <span className={styles.logo}>
-            <Image src="/cogniforge.svg" alt="Vercel Logo" width={72} height={16} />
-          </span>
-        </a>
+				© 2022 Cogniforge. All rights reserved. 
       </footer>
     </div>
   )
