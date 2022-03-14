@@ -35,6 +35,10 @@ jspm_packages/
 # Production
 /build
 
+# Replit
+.replit
+replit.nix
+
 # Vercel
 .vercel
 
