@@ -1,7 +1,7 @@
 import Head from 'next/head'
-import Image from 'next/image'
 import Link from 'next/link'
 import Button from '@mui/material/Button'
+
 import styles from '../styles/Home.module.css'
 
 export default function Home() {
@@ -29,9 +29,7 @@ export default function Home() {
 					Unlike most online learning platforms, Cogniforge promotes projects over the traditional ‘courses’ where students learn a lot of theory but never use it in practice. Instead, by having a project that connects to a{' '}<span className={styles.emphasized}>real-world problem</span>, students learn how to apply the concepts they are learning along the way to the problem.
 				</p>
 
-				<Link
-    href={''}
-    passHref>
+				<Link href={''} passHref>
 					<Button variant="contained" color="secondary" component="a">
 					    REQUEST EARLY ACCESS
 					</Button>
