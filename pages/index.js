@@ -1,45 +1,42 @@
 import Head from 'next/head'
+import Image from 'next/image'
 import Link from 'next/link'
 import Button from '@mui/material/Button'
 
-import styles from '../styles/Home.module.css'
+import styles from '../styles/Home.module.css' 
 
-export default function Home() {
-	return (
-		<div className={styles.container}>
-			<Head>
+export default function Home() { 
+	return ( 
+		<div className={styles.container}> 
+			<Head> 
 				<title>Cogniforge</title>
 				<meta name="description" content="Learning for all through collaborative projects and peer-to-peer mentorship" />
-				<meta name="viewport" content="initial-scale=1, width=device-width" />
-				<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+				<meta httpEquiv="content-type" content="text/html; charset=utf-8" />
+				<meta httpEquiv="content-language" content="en_US" />
+				<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+		
+				<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" /> 
 				<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
 				<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
-				<link rel="manifest" href="/site.webmanifest" />
+				<link rel="manifest" href="/site.webmanifest" /> 
 			</Head>
-
-			<main className={styles.main}>
-
-				<h1 className={styles.title}>
-					Imagine a <span className={styles.emphasized}>space...</span>
-				</h1>
-
-				<p className={styles.description}>
-					where students collaborate with peers and receive{' '}<span className={styles.emphasized}>immediate feedback and help from mentors</span> available in a Discord community server.
-
-					Unlike most online learning platforms, Cogniforge promotes projects over the traditional ‘courses’ where students learn a lot of theory but never use it in practice. Instead, by having a project that connects to a{' '}<span className={styles.emphasized}>real-world problem</span>, students learn how to apply the concepts they are learning along the way to the problem.
-				</p>
-
-				<Link href={''} passHref>
-					<Button variant="contained" color="secondary" component="a">
-					    REQUEST EARLY ACCESS
-					</Button>
-				</Link>
 			
-			</main>
-
-			<footer className={styles.footer}>
-				© 2022 Cogniforge. All rights reserved.
-      </footer>
-		</div>
-	)
+			<main className={styles.main}>
+				<img src="/cogniforge.svg" alt="Cogniforge logo" className={styles.logo}/> 
+			
+				<h1 className={styles.title}> Cogniforge Alpha </h1>
+			
+				<div className={styles.descriptionDiv}>
+					<p className={styles.description}> You have been invited to the alpha testing of Cogniforge, <span className={styles.underlined}>a free project-based learning community.</span> </p>
+		
+					<p className={styles.note}> Note: Alpha releases will be introducing new features continuously, so please keep checking back for updates! </p>
+				</div>
+			
+				<div className={styles.buttonsDiv}>
+					<button className={`${styles.button} ${styles.login}`}> Log in </button>
+					<button className={styles.button}> Sign up </button> 
+				</div> 
+			</main> 
+		</div> 
+	) 
 }
