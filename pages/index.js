@@ -1,11 +1,23 @@
+import React from 'react'
+
 import Head from 'next/head'
 import Image from 'next/image'
 import Link from 'next/link'
-import Button from '@mui/material/Button'
+
+// Light and dark mode
+import { useColorMode } from '@chakra-ui/color-mode'
+import {
+  MoonIcon,
+  SunIcon
+} from '@chakra-ui/icons';
+import { IconButton } from '@chakra-ui/button'
 
 import styles from '../styles/Home.module.css' 
 
 export default function Home() { 
+
+	const { colorMode, toggleColorMode } = useColorMode()
+	
 	return ( 
 		<div className={styles.container}> 
 			<Head> 
@@ -34,8 +46,13 @@ export default function Home() {
 			
 				<div className={styles.buttonsDiv}>
 					<button className={`${styles.button} ${styles.login}`}> Log in </button>
-					<button className={styles.button}> Sign up </button> 
+					<button className={`${styles.button} ${styles.signup}`}> Sign up </button> 
 				</div> 
+
+				<IconButton mt={4} size='sm' aria-label="Toggle light/dark mode" onClick={toggleColorMode}>
+          {colorMode === 'light' ? <MoonIcon/> : <SunIcon/>}
+        </IconButton>
+				
 			</main> 
 		</div> 
 	) 

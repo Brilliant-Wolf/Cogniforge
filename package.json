@@ -25,6 +25,9 @@
   },
   "homepage": "https://github.com/Cytronicode/Cogniforge#readme",
   "dependencies": {
+    "@chakra-ui/button": "^1.5.8",
+    "@chakra-ui/color-mode": "^1.4.6",
+    "@chakra-ui/icons": "^1.1.7",
     "@chakra-ui/react": "^1.8.6",
     "@emotion/react": "^11",
     "@emotion/style": "^0.8.0",

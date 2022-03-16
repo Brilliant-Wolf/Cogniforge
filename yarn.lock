@@ -110,7 +110,7 @@
     "@chakra-ui/react-utils" "1.2.3"
     "@chakra-ui/utils" "1.10.4"
 
-"@chakra-ui/button@1.5.8":
+"@chakra-ui/button@1.5.8", "@chakra-ui/button@^1.5.8":
   version "1.5.8"
   resolved "https://registry.yarnpkg.com/@chakra-ui/button/-/button-1.5.8.tgz#57945201a971fab38d1a700e62f6d840f6d9ad5c"
   integrity sha512-harZywey/6OclxIB5p/Ge/coeGKZWoqmu7JjXlbwTUd3U9IQiOVo/zekY1JscCSz2oZoVBCvoKZVt3on5dPwmA==
@@ -147,7 +147,7 @@
     "@chakra-ui/icon" "2.0.5"
     "@chakra-ui/utils" "1.10.4"
 
-"@chakra-ui/color-mode@1.4.6":
+"@chakra-ui/color-mode@1.4.6", "@chakra-ui/color-mode@^1.4.6":
   version "1.4.6"
   resolved "https://registry.yarnpkg.com/@chakra-ui/color-mode/-/color-mode-1.4.6.tgz#6532086b0030934a5b18ba2b7117b8077b989064"
   integrity sha512-gCO8Z/jv68jXop94MUQNzigl7JXICAgZQUUqLaKhdy1h2zatVDIPFfjwwjnsgM97G0BxQaNBOC87+PD2UYjzHw==
@@ -226,6 +226,14 @@
   integrity sha512-ZrqRvCCIxGr4qFd/r1pmtd9tobRmv8KAxV7ygFoc/t4vOSKTcVIjhE12gsI3FzgvXM15ZFVwsxa1zodwgo5neQ==
   dependencies:
     "@chakra-ui/utils" "1.10.4"
+
+"@chakra-ui/icons@^1.1.7":
+  version "1.1.7"
+  resolved "https://registry.yarnpkg.com/@chakra-ui/icons/-/icons-1.1.7.tgz#f8c0c44a969c8654b90026b7d375b550c4bfbc49"
+  integrity sha512-YIHxey/B4M2PyFASlHXtAWFyW+tsAtGAChOJ8dsM2kpu1MbVUqm/6nMI1KIFd7Te5IWuNYA75rAHBdLI0Yu61A==
+  dependencies:
+    "@chakra-ui/icon" "2.0.5"
+    "@types/react" "^17.0.15"
 
 "@chakra-ui/image@1.1.8":
   version "1.1.8"
@@ -1025,7 +1033,7 @@
   dependencies:
     "@types/react" "*"
 
-"@types/react@*":
+"@types/react@*", "@types/react@^17.0.15":
   version "17.0.40"
   resolved "https://registry.yarnpkg.com/@types/react/-/react-17.0.40.tgz#dc010cee6254d5239a138083f3799a16638e6bad"
   integrity sha512-UrXhD/JyLH+W70nNSufXqMZNuUD2cXHu6UjCllC6pmOQgBX4SGXOH8fjRka0O0Ee0HrFxapDD8Bwn81Kmiz6jQ==
