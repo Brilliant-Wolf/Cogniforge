@@ -23,6 +23,10 @@
           align-items: center;
 }
 
+.hero {
+  max-width: 80%;
+}
+
 .logo {
   display: block;
   width: 25%;
@@ -42,52 +46,10 @@
   text-align: center;
 }
 
-.descriptionDiv {
-  width: 75%;
-}
-
 .description {
   margin: 1vh 0;
   line-height: 1.5;
   font-size: 2vw;
-}
-
-.note {
-  margin: 1vh 0;
-  line-height: 1.5;
-  font-size: 1.5vw;
-}
-
-.buttonsDiv {
-  margin: 3vh 0;
-}
-
-.button {
-  display: inline-block;
-  position: relative;
-  cursor: pointer;
-  padding: 1.5vh 2vw;
-	border: none;
-  border-radius: 2.5vw;
-  font-size: 1.5vw;
-  font-weight: bold;
-	margin: 1vh 2.5vw;
-}
-
-.login {
-	background: #9900ff;
-	color: white;
-}
-
-.signup {
-	background: black;
-	color: white;
-}
-
-.button:hover {
-  -webkit-transform: scale(1.1);
-      -ms-transform: scale(1.1);
-          transform: scale(1.1);
 }
 
 .underlined {
