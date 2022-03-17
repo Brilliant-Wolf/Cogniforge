@@ -1,16 +1,27 @@
+// Imports
+// React.js
 import React from 'react'
 
+// Next.js
 import Head from 'next/head'
+import NextLink from 'next/link'
 
-// Light and dark mode
+// Chakra UI
+import {
+	Image,
+	HStack,
+	VStack,
+	Text
+} from '@chakra-ui/react'
 import { useColorMode } from '@chakra-ui/color-mode'
 import {
-  MoonIcon,
+  BellIcon,
+	MoonIcon,
   SunIcon
 } from '@chakra-ui/icons';
-
 import { Button, IconButton } from '@chakra-ui/button'
 
+// Custom CSS
 import styles from '../styles/Home.module.css'
 
 export default function Home() {
@@ -33,27 +44,28 @@ export default function Home() {
 			</Head>
 
 			<main className={styles.main}>
-				<img src="/cogniforge.svg" alt="Cogniforge logo" className={styles.logo}/>
-
-				<div className={styles.hero}>
-					<h1 className={styles.title}> Cogniforge Alpha </h1>
-
-					<p className={styles.description}> You have been invited to the alpha testing of Cogniforge, <span className={styles.underlined}>a free project-based learning community.</span> </p>
-				</div>
-
-        <Stack spacing={4} direction='row' align='center'>
-          <Button colorScheme='purple'>
-            Login
-          </Button>
-          <Button colorScheme='black'>
-            Sign up
-          </Button>
-        </Stack>
-
-				<IconButton aria-label="Toggle light/dark mode" onClick={toggleColorMode}>
-          {colorMode === 'light' ? <MoonIcon/> : <SunIcon/>}
-        </IconButton>
-
+				<VStack spacing={4} align='center'>
+		
+					<Image src="/cogniforge.svg" alt="Cogniforge logo" className={styles.logo}/>
+	
+					<div className={styles.hero}>
+						<Text fontSize='3xl' color='brand.default' align='center'> Cogniforge Alpha </Text>
+	
+						<Text fontSize='xl' align='center'> You have been invited to the alpha testing of Cogniforge, <span className={styles.underlined}>a free project-based learning community.</span> </Text>
+					</div>
+	
+	        <HStack spacing={5} align='center'>
+						<NextLink href='https://www.youtube.com/watch?v=dQw4w9WgXcQ'>
+		          <Button leftIcon={<BellIcon />} colorScheme='purple'>
+		            Notify me
+		          </Button>
+						</NextLink>
+	
+						<IconButton aria-label="T ggle light/dark mode" onClick={toggleColorMode}>
+	          	{colorMode === 'light' ? <MoonIcon/> : <SunIcon/>}
+	        	</IconButton>
+					</HStack>
+				</VStack>
 			</main>
 		</div>
 	)

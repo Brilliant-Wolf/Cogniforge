@@ -1,10 +1,17 @@
+// Imports
+// Chakra UI
 import { extendTheme } from '@chakra-ui/react'
 
-const config = {
-  initialColorMode: 'light',
-  useSystemColorMode: false,
-}
-
-const theme = extendTheme({ config })
+const theme = extendTheme({
+  colors: {
+    brand: {
+      default: "#9900ff",
+    },
+  },
+	config: {
+		initialColorMode: 'light',
+  	useSystemColorMode: false,
+	},
+})
 
 module.exports = theme

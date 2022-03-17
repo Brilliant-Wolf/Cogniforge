@@ -1,5 +1,8 @@
+// Imports
+// Chakra UI
 import { ChakraProvider } from '@chakra-ui/react'
 
+// Custom CSS
 import '../styles/globals.css'
 import theme from './theme' 
 
