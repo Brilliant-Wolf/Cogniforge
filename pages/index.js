@@ -49,21 +49,17 @@ export default function Home() {
 					<Image src="/cogniforge.svg" alt="Cogniforge logo" className={styles.logo}/>
 	
 					<div className={styles.hero}>
-						<Text fontSize='3xl' color='brand.default' align='center'> Cogniforge Alpha </Text>
+						<Text fontSize='3xl' color='brand.default' align='center'>Cogniforge Beta</Text>
 	
-						<Text fontSize='xl' align='center'> You have been invited to the alpha testing of Cogniforge, <span className={styles.underlined}>a free project-based learning community.</span> </Text>
+						<Text fontSize='xl' align='center'>Cogniforge, <span className={styles.underlined}>a free project-based learning community</span>, is opening up beta access and testing soon!</Text>
 					</div>
 	
 	        <HStack spacing={5} align='center'>
 						<NextLink href='https://www.youtube.com/watch?v=dQw4w9WgXcQ'>
-		          <Button leftIcon={<BellIcon />} colorScheme='purple'>
-		            Notify me
-		          </Button>
+		          <Button leftIcon={<BellIcon />} colorScheme='purple'>Notify me</Button>
 						</NextLink>
 	
-						<IconButton aria-label="T ggle light/dark mode" onClick={toggleColorMode}>
-	          	{colorMode === 'light' ? <MoonIcon/> : <SunIcon/>}
-	        	</IconButton>
+						<IconButton aria-label="T ggle light/dark mode" onClick={toggleColorMode}>{colorMode === 'light' ? <MoonIcon/> : <SunIcon/>}</IconButton>
 					</HStack>
 				</VStack>
 			</main>
