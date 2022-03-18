@@ -8,6 +8,7 @@ import NextLink from 'next/link'
 
 // Chakra UI
 import {
+	Box,
 	Image,
 	HStack,
 	VStack,
@@ -44,15 +45,16 @@ export default function Home() {
 			</Head>
 
 			<main className={styles.main}>
-				<VStack spacing={4} align='center'>
+				<VStack spacing={2} align='center'>
+					<Box>
+						<Image src="/cogniforge.svg" alt="Cogniforge logo"/>
+					</Box>
+		
+					<Box>
+					<Text fontSize='3xl' color='brand.default' align='center'>Cogniforge Beta</Text>
 
-					<Image src="/cogniforge.svg" alt="Cogniforge logo" className={styles.logo}/>
-
-					<div className={styles.hero}>
-						<Text fontSize='3xl' color='brand.default' align='center'>Cogniforge Beta</Text>
-
-						<Text fontSize='xl' align='center'>Cogniforge, <span className={styles.underlined}>a free project-based learning community</span>, is opening up beta access and testing soon!</Text>
-					</div>
+					<Text fontSize='lg' align='center'>Cogniforge, <span className={styles.underlined}>a free project-based learning community</span>, is opening up beta access and testing soon!</Text>
+					</Box>
 
 	        <HStack spacing={5} align='center'>
 						<NextLink href='https://www.youtube.com/watch?v=dQw4w9WgXcQ' passHref>
