@@ -1,4 +1,3 @@
-// Imports
 // React.js
 import React from 'react'
 
@@ -7,20 +6,10 @@ import Head from 'next/head'
 import NextLink from 'next/link'
 
 // Chakra UI
-import {
-	Box,
-	Image,
-	HStack,
-	VStack,
-	Text
-} from '@chakra-ui/react'
+import { Box, Image, HStack, VStack, Text } from '@chakra-ui/react'
+import { Button } from '@chakra-ui/button';
 import { useColorMode } from '@chakra-ui/color-mode'
-import {
-  BellIcon,
-	MoonIcon,
-  SunIcon
-} from '@chakra-ui/icons';
-import { Button, IconButton } from '@chakra-ui/button'
+import { BellIcon, MoonIcon, SunIcon } from '@chakra-ui/icons';
 
 // Custom CSS
 import styles from '../styles/Home.module.css'
@@ -47,7 +36,7 @@ export default function Home() {
 			<main className={styles.main}>
 				<VStack spacing={2} align='center'>
 					<Box>
-						<Image src="/cogniforge.svg" alt="Cogniforge logo"/>
+						<Image src='cogniforge.svg' alt="Cogniforge logo"/>
 					</Box>
 		
 					<Box>
