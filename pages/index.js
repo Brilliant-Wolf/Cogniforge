@@ -51,9 +51,9 @@ export default function Home() {
 					</Box>
 		
 					<Box>
-					<Text fontSize='3xl' color='brand.default' align='center'>Cogniforge Beta</Text>
+					<Text fontSize='3xl' align='center'>Cogniforge Beta</Text>
 
-					<Text fontSize='lg' align='center'>Cogniforge, <span className={styles.underlined}>a free project-based learning community</span>, is opening up beta access and testing soon!</Text>
+					<Text fontSize='lg' align='center'>Opening up beta access and testing soon!</Text>
 					</Box>
 
 	        <HStack spacing={5} align='center'>
@@ -61,7 +61,7 @@ export default function Home() {
 		          <Button leftIcon={<BellIcon />} colorScheme='purple'>Notify me</Button>
 						</NextLink>
 
-						<IconButton aria-label="T ggle light/dark mode" onClick={toggleColorMode}>{colorMode === 'light' ? <MoonIcon/> : <SunIcon/>}</IconButton>
+						<Button leftIcon={colorMode === 'light' ? <MoonIcon/> : <SunIcon/>} onClick={toggleColorMode}>Toggle to {colorMode === 'light' ? 'dark' : 'light'} mode</Button>
 					</HStack>
 				</VStack>
 			</main>
