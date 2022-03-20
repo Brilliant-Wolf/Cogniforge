@@ -1,4 +1,3 @@
-// Imports
 // Next.js
 import NextDocument, { Html, Head, Main, NextScript } from "next/document"
 

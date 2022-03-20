@@ -3,13 +3,12 @@ import React from 'react'
 
 // Next.js
 import Head from 'next/head'
-import NextLink from 'next/link'
 
 // Chakra UI
 import { Box, Image, HStack, VStack, Text } from '@chakra-ui/react'
 import { Button } from '@chakra-ui/button';
 import { useColorMode } from '@chakra-ui/color-mode'
-import { BellIcon, MoonIcon, SunIcon } from '@chakra-ui/icons';
+import { MoonIcon, SunIcon } from '@chakra-ui/icons';
 
 // Custom CSS
 import styles from '../styles/Home.module.css'
@@ -46,10 +45,7 @@ export default function Home() {
 					</Box>
 
 	        <HStack spacing={5} align='center'>
-						<NextLink href='https://www.youtube.com/watch?v=dQw4w9WgXcQ' passHref>
-		          <Button leftIcon={<BellIcon />} colorScheme='purple'>Notify me</Button>
-						</NextLink>
-
+						// Light/dark mode toggle
 						<Button leftIcon={colorMode === 'light' ? <MoonIcon/> : <SunIcon/>} onClick={toggleColorMode}>Toggle to {colorMode === 'light' ? 'dark' : 'light'} mode</Button>
 					</HStack>
 				</VStack>
