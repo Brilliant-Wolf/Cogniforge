@@ -45,7 +45,6 @@ export default function Home() {
 					</Box>
 
 	        <HStack spacing={5} align='center'>
-						// Light/dark mode toggle
 						<Button leftIcon={colorMode === 'light' ? <MoonIcon/> : <SunIcon/>} onClick={toggleColorMode}>Toggle to {colorMode === 'light' ? 'dark' : 'light'} mode</Button>
 					</HStack>
 				</VStack>
