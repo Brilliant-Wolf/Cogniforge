@@ -1,1 +1,0 @@
-# Course updates coming soon!
