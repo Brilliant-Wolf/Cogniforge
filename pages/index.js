@@ -13,6 +13,7 @@ import { ArrowRightIcon, MoonIcon, SunIcon } from '@chakra-ui/icons';
 
 // Custom CSS
 import styles from '../styles/Home.module.css'
+import theme from './assets/theme'
 
 export default function Home() {
 
@@ -33,16 +34,16 @@ export default function Home() {
 				<link rel="manifest" href="/site.webmanifest" />
 			</Head>
 			<main className={styles.main}>
-				<VStack spacing={2}>
+				<VStack spacing={5}>
 					<Image src='cogniforge.svg' alt="Cogniforge logo"/>
 			
 					<Text fontSize='3xl'>Cogniforge Beta</Text>
 	
-					<Text fontSize='lg'>Opening up beta access and testing soon!</Text>
+					<Text fontSize='lg'>Learning for all through collaborative projects and peer-to-peer collaboration</Text>
 
 					<HStack spacing={2}>
 						<Link href="/portal" passHref>
-							<Button leftIcon={<ArrowRightIcon />}>Portal</Button>
+							<Button leftIcon={<ArrowRightIcon />}>Projects portal</Button>
 						</Link>
 	
 						<Button leftIcon={colorMode === 'light' ? <MoonIcon/> : <SunIcon/>} onClick={toggleColorMode}>Toggle to {colorMode === 'light' ? 'dark' : 'light'} mode</Button>
