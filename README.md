@@ -11,7 +11,18 @@
 ## ✨ What is Cogniforge
 Cogniforge is a free project-based platform that focuses on peer-to-peer collaboration and contribution. Our mission is to empower IJHS members to contribute how they built something meaningful to the community. 
 
-- Contribute to community Encouraging IJHS members to collaborate among themselves on projects Develop leadership skills Any member can apply to organise a project on something meaningful to them Build meaningful projects Members can freely choose and build projects that they are interested in
+- Contribute to community
+
+Encouraging IJHS members to collaborate among themselves on projects
+
+- Develop leadership skills
+
+Any member can apply to organise a project on something meaningful to them
+
+- Build meaningful projects
+
+Members can freely choose and build projects that they are interested in
+
 
 ## 🏔 Challenges and limitations
 Every project comes with its challenges, and Cogniforge is no exception. For this to work, we will need to have students who are willing to help out students with questions; and troubleshoot issues when a project first launches. However, as more people complete the projects, we can ask some of them who are active to become “mentors” for that project. Additionally, we need to cover for the domain cost to have a professional look.
