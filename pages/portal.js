@@ -23,19 +23,8 @@ export default function Portal() {
 	    <Box shadow='md' borderWidth='1' borderRadius='l' overflow='hidden' {...rest}>
       <Box p='5'>
         <Box display='flex' alignItems='baseline'>
-          <Badge borderRadius='full' px='2' colorScheme='purple'>
-            New
-          </Badge>
-          <Box
-            color='gray.500'
-            fontWeight='semibold'
-            letterSpacing='wide'
-            fontSize='xs'
-            textTransform='uppercase'
-            ml='2'
-          >
-            {language}
-          </Box>
+          <Badge borderRadius='full' px='2' colorScheme='purple'>New</Badge>
+          <Box color='gray.500' fontWeight='semibold' letterSpacing='wide' fontSize='xs' textTransform='uppercase' ml='2'>{language}</Box>
         </Box>
 
         <Box>
