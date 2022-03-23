@@ -6,27 +6,23 @@ import Head from 'next/head'
 import Link from 'next/link'
 
 // Chakra UI
-import { Image, HStack, VStack } from '@chakra-ui/react'
+import { Heading, HStack, VStack } from '@chakra-ui/react'
 import { Button } from '@chakra-ui/button';
 import { useColorMode, useColorModeValue } from '@chakra-ui/color-mode'
-import { ArrowRightIcon, MoonIcon, SunIcon } from '@chakra-ui/icons';
+import { ArrowLeftIcon, MoonIcon, SunIcon } from '@chakra-ui/icons';
 
 // Custom CSS
-import styles from '../styles/default.module.css'
+import styles from './styles/project.module.css'
 
-export default function Home() {
+export default function discord_bot() {
 
 	const { colorMode, toggleColorMode } = useColorMode()
-
-	const headingColor = useColorModeValue('purple.500', 'white')
-
-	const textColor = useColorModeValue('black', 'purple.300')
 
 	return (
 		<div className={styles.container}>
 			<Head>
-				<title>Cogniforge</title>
-				<meta name="description" content="Free project-based platform that focuses on peer-to-peer collaboration and contribution" />
+				<title>Build a Discord bot with Discord.js and Replit - Cogniforge</title>
+				<meta name="description" content="A 2-week project where you will learn some JavaScript, write + deploy a simple bot script on Replit, and build some commands to interact with your server" />
 				<meta httpEquiv="content-type" content="text/html; charset=utf-8" />
 				<meta httpEquiv="content-language" content="en_US" />
 				<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
@@ -38,11 +34,11 @@ export default function Home() {
 			</Head>
 			<main className={styles.main}>
 				<VStack spacing={5}>
-					<Image src='cogniforge.svg' alt="Cogniforge logo"/>
+					<Heading fontSize='xl'>Coming soon!</Heading>
 
 					<HStack spacing={2}>
 						<Link href="/portal" passHref>
-							<Button leftIcon={<ArrowRightIcon />}>Projects portal</Button>
+							<Button leftIcon={<ArrowLeftIcon />}>Back to projects portal</Button>
 						</Link>
 	
 						<Button leftIcon={colorMode === 'light' ? <MoonIcon/> : <SunIcon/>} onClick={toggleColorMode}>Toggle to {colorMode === 'light' ? 'dark' : 'light'} mode</Button>
